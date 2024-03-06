@@ -1,0 +1,21 @@
+.sluggable-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slug_icon {
+    cursor: pointer;
+    margin-left: 10px;
+    width: 11px;
+    height: 21px;
+    background-size: contain;
+}
+
+.slug_icon--not_slugged {
+    background: url("data:image/gif;base64,R0lGODlhCwAVALMAAPHy9ff4+7q7vYyNjr+/wuLj5Y2Oj/r6+oiJipWVl5CRkvb29o6PkP////j5/AAAACH5BAEAAA4ALAAAAAALABUAAARV0Ekx0BAyE3PaMUTmKAuDMIsikgyAqhnrpmt50hrngVIyVZdewScJZBIFR1IkSSaezKdvyUwOM0YhkWLBOIibzicUs71qrXM5jZOwbjBJeEfOcIOSCAA7");
+}
+
+.slug_icon--slugged{
+    background: url("data:image/gif;base64,R0lGODlhCwAVAMQAAHFxcn5/gPHy9cnJyYyNjoiJiv////Pz9MfIy/f4+/v7+21ub/r6+rq7vb+/wo2Oj46PkJCRkvb29vj5/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAABMALAAAAAALABUAAAVT4CSOZDklptgQBdGUzsMYzOOQkQQVkBThOkHvN8pBhD5gYBFIjmIDxcBWagAOgJcJwUCkrFjt8xGd3oqSZZMoMiLZE/cQuJuPZ7XzaNUSl1ApgSEAOw==");
+}

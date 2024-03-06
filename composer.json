@@ -1,0 +1,17 @@
+{
+    "name": "tersoft/orchid-fields",
+    "description": "Дополнительные поля (Field) для пакета Orchid Laravel",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tersoft",
+            "email": "marinenkov.web@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.10",
+        "orchid/platform": "^14.11"
+    }
+}
