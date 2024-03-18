@@ -10,6 +10,7 @@
     "production": "mix --production"
   },
   "dependencies": {
+    "@melloware/coloris": "^0.23.0",
     "jstree": "^3.3.16",
     "laravel-mix": "^6.0.27",
     "rater-js": "^1.0.1",

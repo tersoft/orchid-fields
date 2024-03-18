@@ -16,7 +16,6 @@ class OrchidFieldsServiceProvider extends ServiceProvider
     {
         $path = dirname(__DIR__, 1) . '/../resources/views/';
         $this->loadViewsFrom($path, 'platform-fields');
-        //$dashboard->registerResource('scripts', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js');
         $dashboard->registerResource('scripts', asset('/vendor/tersoft-orchid-fields/js/orchid_fields.js'));
         $this->registerAssets();
     }

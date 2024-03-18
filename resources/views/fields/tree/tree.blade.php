@@ -1,5 +1,5 @@
 @component($typeForm, get_defined_vars())
-    {{ csrf_token() }}
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @if($showSearch)
         <input
             type="text"

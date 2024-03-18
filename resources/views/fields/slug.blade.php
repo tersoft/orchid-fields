@@ -3,6 +3,6 @@
         data-controller="slug"
         data-slug-undefinedsymbol="{{$undefinedSymbol}}"
     >
-        <input class="form-control" required="required" value="{{$value}}" {{$attributes}}>
+        <input class="form-control" value="{{$value}}" {{$attributes}}>
     </div>
 @endcomponent

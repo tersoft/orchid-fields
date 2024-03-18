@@ -32,4 +32,17 @@ class Tree extends Field
     protected $inlineAttributes = [
         'title'
     ];
+
+    /**
+     * @param string $searchPlaceholder
+     * @return $this
+     */
+    public function showSearch($searchPlaceholder = false)
+    {
+        $this->attributes['showSearch'] = true;
+        if ($searchPlaceholder) {
+            $this->attributes['searchPlaceholder'] = $searchPlaceholder;
+        }
+        return $this;
+    }
 }

@@ -9,6 +9,11 @@ use Orchid\Screen\Fields\Input;
 /**
  * Class InputSlug
  * @package Tersoft\OrchidFields\Fields
+ *
+ * @method InputSlug title(string $value = null)
+ * @method InputSlug help(string $value = null)
+ * @method InputSlug popover(string $value = null)
+ * @method InputSlug disabled($value = true)
  */
 class InputSlug extends Input
 {
@@ -22,4 +27,14 @@ class InputSlug extends Input
     protected $attributes = [
         'undefinedSymbol' => '-',
     ];
+
+    /**
+     * @param string $symbol
+     * @return $this
+     */
+    public function undefinedSymbol(string $symbol)
+    {
+        $this->attributes['undefinedSymbol'] = $symbol;
+        return $this;
+    }
 }
