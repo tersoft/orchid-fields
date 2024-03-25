@@ -15,19 +15,28 @@ Next, you should publish resources files using the `vendor:publish` Artisan comm
 
 
 ### Slug
+<p align="left"><img src="http://terberry.ru/other-files/slug.jpg" alt="Slug Laravel Orchid"></p>
 
 ```php
 use Tersoft\OrchidFields\Fields\InputSlug;
 
 InputSlug::make('category.title')
     ->set('data-slug', 'category[slug]') // category[slug] - field to generate slug
-    ->undefinedSymbol('_') // default "-"
+    ->undefinedSymbol('_'), // default "-"
+    
+Input::make('category.slug'), // field to generate slug
 ```
 
 
 ### Color
 - 3 themes
 - hex or rgb format
+<p align="left">
+    <img src="http://terberry.ru/other-files/color-hex.jpg" alt="Color Laravel Orchid">
+    <img src="http://terberry.ru/other-files/color-hex-2.jpg" alt="Color Laravel Orchid">
+    <img src="http://terberry.ru/other-files/color-rgb.jpg" alt="Color Laravel Orchid">
+</p>
+
 ```php
 use Tersoft\OrchidFields\Fields\Color;
 
@@ -43,6 +52,8 @@ Color::make('color')
 ### Star
 - unlimit stars
 - select step
+<p align="left"><img src="http://terberry.ru/other-files/star.jpg" alt="Star Laravel Orchid"></p>
+
 ```php
 use Tersoft\OrchidFields\Fields\RateStars;
 
@@ -58,6 +69,8 @@ RateStars::make('star')
 ### Tree
 - search by tree
 - add button
+<p align="left"><img src="http://terberry.ru/other-files/tree.jpg" alt="Tree Laravel Orchid"></p>
+
 ```php
 use \Tersoft\OrchidFields\Fields\Tree;
 
@@ -69,6 +82,39 @@ Tree::make('category')
     ])
 ```
 
+
+
+### YandexMap
+- select coordinates to yandex map
+<p align="left"><img src="http://terberry.ru/other-files/yandex-map.jpg" alt="Tree Laravel Orchid"></p>
+
+```php
+use \Tersoft\OrchidFields\Fields\YandexMap;
+
+YandexMap::make('coords')
+    ->apiKey('YOU_API_KEY') // optional - here or add YANDEX_MAP_KEY in .env
+    ->zoom(8) // zoom map, default 12
+    ->language('en_US') // map language, default ru_RU, avaliable: ru_RU, ru_UA, uk_UA, tr_TR, en_RU, en_US, he_IL, en_IL
+    ->hideZoomButton() // hide button to zoom map
+    ->markerColor('#16bbd8') // marker color, default '#16bbd8'
+    ->point('37.588144, 55.733842'), // center if not value, default '37.588144, 55.733842' Moscow
+```
+
+
+
+### GoogleMap
+- select coordinates to google map
+<p align="left"><img src="http://terberry.ru/other-files/google-map.jpg" alt="Tree Laravel Orchid"></p>
+
+```php
+use \Tersoft\OrchidFields\Fields\GoogleMap;
+
+GoogleMap::make('coords')
+    ->apiKey('YOU_API_KEY') // optional - here or add GOOGLE_MAP_KEY in .env
+    ->mapId('YOU_MAP_ID') // optional - here or add  GOOGLE_MAP_ID in .env
+    ->zoom(8) // zoom map, default 12
+    ->point('37.588144, 55.733842'), // center if not value, default '37.588144, 55.733842' Moscow
+```
 
 ### GitHub
 * Create [issues](https://github.com/tersoft/orchid-fields/issues) to ask questions or report problems.
