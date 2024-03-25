@@ -30,11 +30,11 @@ Input::make('category.slug'), // field to generate slug
 
 ### Color
 - 3 themes
-- hex or rgb format
+- HEX or RGB format
 <p align="left">
-    <img src="http://terberry.ru/other-files/color-hex.jpg" alt="Color Laravel Orchid">
-    <img src="http://terberry.ru/other-files/color-hex-2.jpg" alt="Color Laravel Orchid">
-    <img src="http://terberry.ru/other-files/color-rgb.jpg" alt="Color Laravel Orchid">
+    <img src="http://terberry.ru/other-files/color-hex.jpg" alt="Color Laravel Orchid" width="275px">
+    <img src="http://terberry.ru/other-files/color-hex-2.jpg" alt="Color Laravel Orchid" width="300px">
+    <img src="http://terberry.ru/other-files/color-rgb.jpg" alt="Color Laravel Orchid" width="225px">
 </p>
 
 ```php
@@ -50,8 +50,9 @@ Color::make('color')
 
 
 ### Star
-- unlimit stars
-- select step
+- Unlimit stars
+- Select step
+- Input value in field
 <p align="left"><img src="http://terberry.ru/other-files/star.jpg" alt="Star Laravel Orchid"></p>
 
 ```php
@@ -67,8 +68,9 @@ RateStars::make('star')
 
 
 ### Tree
-- search by tree
-- add button
+- Search by tree
+- Add action button
+
 <p align="left"><img src="http://terberry.ru/other-files/tree.jpg" alt="Tree Laravel Orchid"></p>
 
 ```php
@@ -85,7 +87,8 @@ Tree::make('category')
 
 
 ### YandexMap
-- select coordinates to yandex map
+- Select coordinates to yandex map
+
 <p align="left"><img src="http://terberry.ru/other-files/yandex-map.jpg" alt="Tree Laravel Orchid"></p>
 
 ```php
@@ -103,7 +106,8 @@ YandexMap::make('coords')
 
 
 ### GoogleMap
-- select coordinates to google map
+- Select coordinates to google map
+
 <p align="left"><img src="http://terberry.ru/other-files/google-map.jpg" alt="Tree Laravel Orchid"></p>
 
 ```php
