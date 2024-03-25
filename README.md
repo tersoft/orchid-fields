@@ -15,7 +15,9 @@ Next, you should publish resources files using the `vendor:publish` Artisan comm
 
 
 ### Slug
-<p align="left"><img src="http://terberry.ru/other-files/slug.jpg" alt="Slug Laravel Orchid"></p>
+- Auto generate slug
+
+<p align="left"><img src="https://github.com/tersoft/orchid-fields/raw/master/images/doc/slug.jpg" alt="Slug Laravel Orchid"></p>
 
 ```php
 use Tersoft\OrchidFields\Fields\InputSlug;
@@ -31,10 +33,11 @@ Input::make('category.slug'), // field to generate slug
 ### Color
 - 3 themes
 - HEX or RGB format
+
 <p align="left">
-    <img src="http://terberry.ru/other-files/color-hex.jpg" alt="Color Laravel Orchid" width="275px">
-    <img src="http://terberry.ru/other-files/color-hex-2.jpg" alt="Color Laravel Orchid" width="300px">
-    <img src="http://terberry.ru/other-files/color-rgb.jpg" alt="Color Laravel Orchid" width="225px">
+    <img src="https://github.com/tersoft/orchid-fields/raw/master/images/doc/color-hex.jpg" alt="Color Laravel Orchid" width="275px">
+    <img src="https://github.com/tersoft/orchid-fields/raw/master/images/doc/color-hex-2.jpg" alt="Color Laravel Orchid" width="300px">
+    <img src="https://github.com/tersoft/orchid-fields/raw/master/images/doc/color-rgb.jpg" alt="Color Laravel Orchid" width="225px">
 </p>
 
 ```php
@@ -53,7 +56,8 @@ Color::make('color')
 - Unlimit stars
 - Select step
 - Input value in field
-<p align="left"><img src="http://terberry.ru/other-files/star.jpg" alt="Star Laravel Orchid"></p>
+
+<p align="left"><img src="https://github.com/tersoft/orchid-fields/raw/master/images/doc/star.jpg" alt="Star Laravel Orchid"></p>
 
 ```php
 use Tersoft\OrchidFields\Fields\RateStars;
@@ -71,7 +75,7 @@ RateStars::make('star')
 - Search by tree
 - Add action button
 
-<p align="left"><img src="http://terberry.ru/other-files/tree.jpg" alt="Tree Laravel Orchid"></p>
+<p align="left"><img src="https://github.com/tersoft/orchid-fields/raw/master/images/doc/tree.jpg" alt="Tree Laravel Orchid"></p>
 
 ```php
 use \Tersoft\OrchidFields\Fields\Tree;
@@ -89,7 +93,7 @@ Tree::make('category')
 ### YandexMap
 - Select coordinates to yandex map
 
-<p align="left"><img src="http://terberry.ru/other-files/yandex-map.jpg" alt="Tree Laravel Orchid"></p>
+<p align="left"><img src="https://github.com/tersoft/orchid-fields/raw/master/images/doc/yandex-map.jpg" alt="Tree Laravel Orchid"></p>
 
 ```php
 use \Tersoft\OrchidFields\Fields\YandexMap;
@@ -108,7 +112,7 @@ YandexMap::make('coords')
 ### GoogleMap
 - Select coordinates to google map
 
-<p align="left"><img src="http://terberry.ru/other-files/google-map.jpg" alt="Tree Laravel Orchid"></p>
+<p align="left"><img src="https://github.com/tersoft/orchid-fields/raw/master/images/doc/google-map.jpg" alt="Tree Laravel Orchid"></p>
 
 ```php
 use \Tersoft\OrchidFields\Fields\GoogleMap;
